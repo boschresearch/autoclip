@@ -25,7 +25,6 @@ Please refer to this citation, if this repository benefits your research:
 author = {Hendrik Metzen, Jan and Saranrittichai, Piyapat and Mummadi, Chaithanya Kumar},
 title = {
 AutoCLIP: Auto-tuning Zero-Shot Classifiers for Vision-Language Models},
-booktitle = {Proceedings of the European Conference on Computer Vision (ECCV)},
 journal={Transactions on machine learning research},
 year={2024}
 }
