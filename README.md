@@ -13,7 +13,7 @@ For more information about this work, please read our [TMLR paper](https://openr
 
 ## Installation
 
-An envrionment including the dependencies of AutoCLIP can be created as follows:
+An environment including the dependencies of AutoCLIP can be created as follows:
 
 ```
 python -m venv .venv
