@@ -7,8 +7,19 @@ For more information about this work, please read our [TMLR paper](https://openr
 > Metzen, J., Saranrittichai, P., Mummadi, C. (2024). AutoCLIP: Auto-tuning Zero-Shot Classifiers for Vision-Language Models. Transactions on Machine Learning Research (TMLR).
 
 ## Table of Contents
+- [Installation](#installation)
 - [Experiment](#experiment)
 - [Reference](#reference)
+
+## Installation
+
+An envrionment including the dependencies of AutoCLIP can be created as follows:
+
+```
+python -m venv .venv
+source .venv/bin/activate
+poetry install --no-root
+```
 
 ## Experiment
 
@@ -18,14 +29,15 @@ This repository provides a script to evaluate AutoCLIP on simulated CLIP data co
 python auto_clip_simulated.py
 ```
 
+The provided code be extended to actual CLIP-based zero-shot classifiers by replacing the simulated cosine similarities by actual ones from a vision-language model such as CLIP.
+
 ## Reference
 Please refer to this citation, if this repository benefits your research:
 ```
 @InProceedings{metzen2024autoclip,
-author = {Hendrik Metzen, Jan and Saranrittichai, Piyapat and Mummadi, Chaithanya Kumar},
-title = {
-AutoCLIP: Auto-tuning Zero-Shot Classifiers for Vision-Language Models},
-journal={Transactions on machine learning research},
+author = {Metzen, Jan Hendrik and Saranrittichai, Piyapat and Mummadi, Chaithanya Kumar},
+title = {AutoCLIP: Auto-tuning Zero-Shot Classifiers for Vision-Language Models},
+journal={Transactions on Machine Learning Research},
 year={2024}
 }
 ```
