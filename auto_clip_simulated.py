@@ -1,7 +1,7 @@
 #!/usr/local/bin/python3
-# the paper "AutoCLIP: Auto-tuning Zero-Shot Classifiers for Vision-Language Models" accepted at TMLR.
+# Code for the paper "AutoCLIP: Auto-tuning Zero-Shot Classifiers for Vision-Language Models" accepted at TMLR.
 # Copyright (c) 2024 Robert Bosch GmbH
-# 
+#
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as published
 # by the Free Software Foundation, either version 3 of the License, or
@@ -23,7 +23,7 @@ import numpy as np
 from scipy.optimize import bisect
 from scipy.special import softmax
 
-__import__("matplotlib").use("TkAgg")
+__import__("matplotlib")
 
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -236,7 +236,7 @@ def run_experiment(
         np.random.seed(seed)
 
         # Simulate CLIP text and image encoders
-        # Note: Actual CLIP modle could be "plugged-in" here to run AutoCLIP on actual
+        # Note: Actual CLIP model could be "plugged-in" here to run AutoCLIP on actual
         #       zero-shot classification tasks
         cosine_similarities = simulate_clip(
             n_dims,
@@ -315,13 +315,15 @@ if __name__ == "__main__":
                     entanglement,
                     n_repetitions=n_repetitions,
                 )
-                print("\t Entanglement: %.2f  Accuracy: %.2f" % (entanglement, mean_accuracy))
+                print(
+                    "\t Entanglement: %.2f  Accuracy: %.2f"
+                    % (entanglement, mean_accuracy)
+                )
                 mean_accuracies.append(mean_accuracy)
 
             plt.plot(entanglements, mean_accuracies, label=aggregation)
 
         plt.xlim(0, 1)
-        # plt.ylim(0.5, 1.0)
         plt.xlabel("Entanglement")
         if i == 0:
             plt.legend()
