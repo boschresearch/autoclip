@@ -34,10 +34,14 @@ The provided code be extended to actual CLIP-based zero-shot classifiers by repl
 ## Reference
 Please refer to this citation, if this repository benefits your research:
 ```
-@InProceedings{metzen2024autoclip,
-author = {Metzen, Jan Hendrik and Saranrittichai, Piyapat and Mummadi, Chaithanya Kumar},
-title = {AutoCLIP: Auto-tuning Zero-Shot Classifiers for Vision-Language Models},
+@article{
+metzen2024autoclip,
+title={Auto{CLIP}: Auto-tuning Zero-Shot Classifiers for Vision-Language Models},
+author={Jan Hendrik Metzen and Piyapat Saranrittichai and Chaithanya Kumar Mummadi},
 journal={Transactions on Machine Learning Research},
-year={2024}
+issn={2835-8856},
+year={2024},
+url={https://openreview.net/forum?id=gVNyEVKjqf},
+note={}
 }
 ```
